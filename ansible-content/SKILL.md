@@ -1,9 +1,11 @@
 ---
-name: Ansible Content
-description: Defines the behavioral guidelines for AI helpers assisting with Ansible content development, based off of the ideas from Karpathy's LLM Coding Guidelines.
+name: ansible-content
+description: General Ansible content creation and best practices for roles, playbooks, and automation development
 ---
 
-Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
+# Ansible Content
+
+Behavioral guidelines to reduce common LLM coding mistakes when working with Ansible. Merge with project-specific instructions as needed.
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
@@ -62,6 +64,15 @@ For multi-step tasks, state a brief plan:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+## Ansible-Specific Best Practices
+
+- Use FQCN (Fully Qualified Collection Names) for all modules
+- Name all tasks, plays, and blocks descriptively
+- Use `ansible-lint` to validate content before delivery
+- Prefer idempotent operations
+- Use `check_mode` compatibility where relevant
+- Follow YAML best practices (2-space indent, consistent style)
 
 ---
 

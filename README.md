@@ -1,4 +1,3 @@
 # ai-skills-for-ansible
 
-Just a few AI helpers I've whipped together to assist with developing ansible content, based off of the Good Practices Library for Ansible
-
+Just the skills and behavioral definitions I use for working with AI (claude and cursor).
